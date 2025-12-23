@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 0;
+}
+
+/* CHOICES FLEX */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Individual colors */
+#paper {
+    background-color: #4da6ff;
+}
+
+#scissor {
+    background-color: #ff4d4d;
+}
+
+#stone {
+    background-color: #66cc66;
+}
+
+/* Hover effect */
+.choice:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* SCORE BOARD */
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.score p:first-child {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* MESSAGE */
+.msg-container {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+#msg {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#user{
+    font-size: 1.5rem;
+    background-color: rgb(202, 72, 12);
+    color: white;
+    
+}
+
+#comp{
+    font-size: 1.5rem;
+    background-color: rgb(202, 72, 12);;
+    color: white;
+}
+
